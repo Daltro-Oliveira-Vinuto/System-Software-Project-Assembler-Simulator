@@ -1,0 +1,13 @@
+input n
+load n
+fat: sub one
+jmpz exit
+store n+1
+mul n
+store n
+load n+1
+jmp fat
+exit: output n
+stop
+one: const 1
+n: space 2
